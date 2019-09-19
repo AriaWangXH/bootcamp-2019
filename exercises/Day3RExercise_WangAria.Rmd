@@ -118,10 +118,8 @@ long_gen_group %>%
     facet_wrap(~ source, scales = 'free') + 
     # specify the choice of scales, in case some sources just have a horizontal line of output
     scale_color_brewer(palette = 'Set3', name = 'Energy group') + 
-    labs(title = 'Average hourly output by energy source', x = 'Hour', 
-         y ='Output (MW)') +
-    theme_bw() + theme(axis.text.x = element_text(angle = 45))
-
+    labs(title = 'Average hourly output by energy source', x = 'Hour', y ='Output (MW)') +
+    theme(axis.text.x = element_text(angle = 45), legend.position = "bottom") + theme_bw()
 ```
 
 
